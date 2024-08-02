@@ -1,7 +1,8 @@
-import Image from 'next/image'
 import { Inter, Quantico } from 'next/font/google'
-import Header from './components/global/Header'
 import Footer from './components/global/Footer'
+import Navbar from './components/global/Navbar'
+import Header from './components/home/Header'
+import Prediction from './components/home/Prediction'
 
 const quantico = Quantico(
   { 
@@ -12,9 +13,11 @@ const quantico = Quantico(
 export default function Home() {
   return (
     <main
-      className={`h-screen ${quantico.className}`}
+      className={` ${quantico.className}`}
     >
+      <Navbar />
       <Header />
+      <Prediction />
       <Footer />
 
     </main>
