@@ -3,6 +3,7 @@ import Footer from './components/global/Footer'
 import Navbar from './components/global/Navbar'
 import Header from './components/home/Header'
 import Prediction from './components/home/Prediction'
+import Football from './components/api_files/Football'
 
 const quantico = Quantico(
   { 
@@ -18,6 +19,7 @@ export default function Home() {
       <Navbar />
       <Header />
       <Prediction />
+      <Football />
       <Footer />
 
     </main>
